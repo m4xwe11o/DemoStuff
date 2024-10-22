@@ -1,5 +1,7 @@
-#Download programm
+#Define programm
 $Filename = "7z2407-x64.msi"
+
+#Download programm
 Invoke-WebRequest -UseBasicParsing -Uri "https://7-zip.org/a/7z2407-x64.msi" -OutFile $Filename
 
 #Install 7zip silently
