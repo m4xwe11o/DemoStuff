@@ -8,7 +8,7 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://dl.google.com/tag/s/appguid%3D%
 
 #Install 7zip silently
 Start-Process msiexec.exe -Wait -ArgumentList "/package $($7zip) /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ADD_FILE_CONTEXT_MENU_RUNPOWERSHELL=1 REGISTER_MANIFEST=1 USE_MU=1 ENABLE_MU=1 ADD_PATH=1"
-Start-Process msiexec.exe -Wait -ArgumentList "/package $($Chrome) /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ADD_FILE_CONTEXT_MENU_RUNPOWERSHELL=1 REGISTER_MANIFEST=1 USE_MU=1 ENABLE_MU=1 ADD_PATH=1"
+msiexec.exe /i $($Chrome) /qn 
 
 #Remove install file
 #Remove-Item $Filename
