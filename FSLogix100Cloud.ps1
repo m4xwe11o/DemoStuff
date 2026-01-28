@@ -1,7 +1,7 @@
 ###################
 #    Variables    #
 ###################
-$profileShare = "\\atclavdspsfslogixcopemv2.file.core.windows.net\entrafslogix"
+$profileShare = "\\atclavdspsfslogixcopemv2.file.core.windows.net\entrafslogix\profiles"
 
 
 ################
